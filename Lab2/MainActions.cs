@@ -41,8 +41,10 @@ namespace FileWatcherForFun
         }
 
         // Creates new Directory and deletes old with the same name.
-        public static void CreateDirectory(string path)
+        public static string CreateDirectory(string path)
         {
+            string ourPath = path;
+
             if (Directory.Exists(path))
             {
                 WriteLine($"Folder wasn't created !");
@@ -59,9 +61,10 @@ namespace FileWatcherForFun
                 catch (Exception ex)
                 {
                     UserInteraction.PrintExceptionInfo(ex);
-                    return;
+                    return ourPath;
                 }                
-            }            
+            }
+            return ourPath;
         }
         
         public static void DeleteFile(string path)

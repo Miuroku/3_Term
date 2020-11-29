@@ -60,8 +60,7 @@ namespace FileWatcherForFun
 
             string tmpFilePath = Path.Combine(tmpDirectory, Path.GetFileName(fullFilePath));
             File.Copy(fullFilePath, tmpFilePath);
-
-            // ----
+            
             // 1) Зашифровать.
             string filePathAfterEncryption = MainActions.Encrypt(tmpFilePath);
 
@@ -85,18 +84,19 @@ namespace FileWatcherForFun
             filePathAfterDecryption = MainActions.RenameFile(filePathAfterDecryption, Path.GetFileNameWithoutExtension(fullFilePath));
 
                 // 5.1) Переместить готовый ответ в основное "TargetDirectory".
-                MainActions.MoveFileOrFolder(filePathAfterDecryption, targetDirPath);
+                string fileAfterMoving = MainActions.MoveFileOrFolder(filePathAfterDecryption, targetDirPath);
 
                 // 5.2) Удалить "tmpDir2".
                 Directory.Delete(tmpDir2, true);
 
             // 6) Копировать в "TargetDirectory\archive" - с точно таким же расположением папок как и в "SourceDirectory".
-            MainActions.CreateDirectory(Path.Combine(targetDirPath, "archive"));
+            string archiveDirectoryPath = MainActions.CreateDirectory(Path.Combine(targetDirPath, "archive"));
+            string fileAfterCopying = Path.Combine(archiveDirectoryPath, Path.GetFileName(fileAfterMoving));
+            File.Copy(fileAfterMoving, fileAfterCopying, true);
 
-            // ----
+            MainActions.RenameBuisnessFile(fileAfterCopying);
 
-            string fileName = e.Name;
-
+            string fileName = Path.GetFileName(fullFilePath);
             RecordEntry(fileEvent, fileName, logFilePath);
         }
 
