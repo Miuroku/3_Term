@@ -1,4 +1,3 @@
-# 3_Term
 Descripton (simple, why not) : 
 1) Lab2 :
        Very sinmple : 
