@@ -1,0 +1,17 @@
+{
+	"encodingOptions": {
+	"enableEncoding" : true
+   },
+   "archiveOptions" : {
+	"enableArchivation" : true,
+   	"archiveDirectoryPath" : "C:\Users\supay\Desktop\Labs_CS\Lab2Stuff\TargetDirectory\archive",	
+   }, 
+   "watcherOptions" : {
+	"sourseDirectoryPath" : "C:\Users\supay\Desktop\Labs_CS\Lab2Stuff\SourceDirectory",
+	"targetDirectoryPath" : "C:\Users\supay\Desktop\Labs_CS\Lab2Stuff\TargetDirectory\FromSourceDirectory"
+   },
+   "loggerOptions : {
+	"enableLogging" : true,
+	"logFilePath" : "C:\Users\supay\Desktop\Labs_CS\Lab2Stuff\TargetDirectory\log.txt"
+   }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<encodingOptions>
+	<enableEncoding>true</enableEncoding>
+</encodingOptions>
+<archiveOptions>
+	<enableArchivation>true</enableArchivation>
+	<archiveDirectoryPath>C:\Users\supay\Desktop\Labs_CS\Lab2Stuff\TargetDirectory\archive</archiveDirectoryPath>	
+</archiveOptions>
+<watcherOptions>
+	<sourseDirectoryPath>C:\Users\supay\Desktop\Labs_CS\Lab2Stuff\SourceDirectory</sourseDirectoryPath>
+	<targetDirectoryPath>C:\Users\supay\Desktop\Labs_CS\Lab2Stuff\TargetDirectory\FromSourceDirectory</targetDirectoryPath>
+</watcherOptions>
+<loggerOptions>
+	<enableLogging>true</enableLogging>
+	<logFilePath>C:\Users\supay\Desktop\Labs_CS\Lab2Stuff\TargetDirectory\log.txt</logFilePath>
+</loggerOptions> 
