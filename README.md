@@ -1,4 +1,6 @@
-Descripton (simple, why not) : 
+# Labs on c# for the University
+
+**Descripton (simple, why not) : ** 
 1) Lab2 :
        Very sinmple : 
        We has two folders : "SourceDirectory"(imagine it's client) and "TargetDirectory"(imagine it's our server).
@@ -13,4 +15,6 @@ Descripton (simple, why not) :
          4) Move file encrypted-compressed-file to "TargetDirectory\FromSourceDirectory" and to "TargetDirectory\archive".
          5) Decompress file.
          6) Decrypt file.
-       
+
+2) Lab3 :
+
