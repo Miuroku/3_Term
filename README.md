@@ -22,6 +22,6 @@
        AllOptions - represents options that we could change;<br />
        IConfigurationParser - contains one method (Parse());<br />
        JsonParser & XMLParser - universal parsers (implement IConfigurationParser);<br />
-       ConfigurationLoader - gets the path and searches there for configuration files, 
+       ConfigurationLoader - gets the path and searches there for configuration files,<br />
                        and verify if all options was loaded, if not, inserts default values;<br />
        ConfigurationProvider - returns maximum options for "AllOptions".<br />      
