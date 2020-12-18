@@ -2,7 +2,7 @@
 
 **Descripton (simple, why not) :** 
 
-### 3. Lab4 : <br/>
+### 3. Lab4 : 
        What was added:<br/>
        1) XmlGenerator - generates .xml file from List<PersonInfo><br/>
        2) DataAccessLayer - base class for getting data from database<br/>
