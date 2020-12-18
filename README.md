@@ -1,6 +1,6 @@
 # Labs on c# for the University
 
-**Descripton (simple, why not) : ** 
+**Descripton (simple, why not) :** 
 1) Lab2 :
        Very sinmple : 
        We has two folders : "SourceDirectory"(imagine it's client) and "TargetDirectory"(imagine it's our server).
