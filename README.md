@@ -1,8 +1,8 @@
-# Labs on c# for the University
+## Labs on c# for the University
 
 **Descripton (simple, why not) :** 
 
-3) Lab4 : <br/>
+### 3. Lab4 : <br/>
        What was added:<br/>
        1) XmlGenerator - generates .xml file from List<PersonInfo><br/>
        2) DataAccessLayer - base class for getting data from database<br/>
@@ -14,8 +14,8 @@
        7) FileManager - windows service from last lab. works<br/>
        8) Main (DataManager) - firstly loads options using OptionsManager,<br/>
               than getting info from DB using ServiceLayer and generates Xml file in the SourceDirectory<br/>
-
-1) Lab2 :
+***
+### 1. Lab2 :
        Very sinmple : 
        We has two folders : "SourceDirectory"(imagine it's client) and "TargetDirectory"(imagine it's our server).
        Imagine the task is safely sent files from client to server. (p.s. this app doesn't use network, only files on your comuter)
@@ -29,8 +29,8 @@
          4) Move file encrypted-compressed-file to "TargetDirectory\FromSourceDirectory" and to "TargetDirectory\archive".
          5) Decompress file.
          6) Decrypt file.
-
-2) Lab3 :<br />
+***
+### 2. Lab3 :<br />
     The same as Lab2. BUT now we could tune such app options as :<br />
     source, target, archive and log.txt directories, encryption, logging and archivation.<br />
     Internal structure (configuration classes/interfaces): <br />
